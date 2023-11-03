@@ -1,0 +1,37 @@
+  server:
+    port: 8082
+
+  spring:
+    application:
+      name: notification
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://postgres:5432/notification
+      username: habscode
+      password: password
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+        jdbc:
+          time-zone: UTC
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+    zipkin:
+      base-url: http://zipkin:9411
+    rabbitmq:
+      addresses: rabbitmq:5672  #the protocol is not http it is ampq
+                        # instead of localhost you can use amqp://guest@17.0.0.1:5672
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://eureka-server:8761/eureka
+      fetch-registry: true
+      register-with-eureka: true
+
+  rabbitmq:
+    exchanges:
+      internal: internal.exchange   # one exchange named internal the name is internal.exchange
+    queue:
+      notification: notification.queue   # defined a notification queue named notification.queue
+    routing-keys:
+      internal-notification: internal.notification.routing-key

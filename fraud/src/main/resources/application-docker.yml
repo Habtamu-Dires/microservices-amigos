@@ -1,0 +1,27 @@
+  server:
+    port: 8081
+  spring:
+    application:
+      name: fraud
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://postgres:5432/fraud
+      username: habscode
+      password: password
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+        jdbc:
+          time-zone: UTC
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+    zipkin:
+      base-url: http://zipkin:9411
+
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://eureka-server:8761/eureka
+      fetch-registry: true
+      register-with-eureka: true
