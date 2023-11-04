@@ -1,0 +1,7 @@
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/NotificationRepository.java
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/NotificationConfig.java
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/rabbitmq/NotificationConsumer.java
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/NotificationApplication.java
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/NotificationController.java
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/NotificationService.java
+/home/hab/work-space/microservices/amigos/habservices/notification/src/main/java/org/example/notification/Notification.java

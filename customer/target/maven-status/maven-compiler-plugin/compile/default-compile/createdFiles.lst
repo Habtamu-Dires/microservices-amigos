@@ -1,0 +1,8 @@
+org/example/customer/CustomerController.class
+org/example/customer/CustomerConfig.class
+org/example/customer/CustomerService.class
+org/example/customer/CustomerRepository.class
+org/example/customer/CustomerApplication.class
+org/example/customer/CustomerRegistrationRequest.class
+org/example/customer/Customer$CustomerBuilder.class
+org/example/customer/Customer.class
